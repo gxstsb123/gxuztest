@@ -1,0 +1,9 @@
+:root { --bg:#0f0f12; --card:#1b1820; --accent:#722191; --text:#eaeaea; }
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);padding:12px;border-radius:8px}
+header.site-header{display:flex;align-items:center;gap:12px}
+header.site-header .logo{width:48px;height:48px}
+a{color:var(--accent)}
+input,button,select{padding:8px;margin:6px 0}
+pre{white-space:pre-wrap;max-height:300px;overflow:auto;background:#111;padding:10px;border-radius:6px}
