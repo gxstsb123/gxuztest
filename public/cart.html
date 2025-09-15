@@ -1,0 +1,40 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Cart - GXUZ</title><link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap' rel='stylesheet'><link rel='stylesheet' href='/assets/css/style.css'></head><body>
+    <header class="site-header container">
+      <div class="brand">
+        <img class="logo" src="/images/logo.svg" alt="GXUZ">
+        <div>
+          <h1>GXUZ</h1>
+          <div class="tagline">[GXUZ Services]</div>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="/products.html">Products</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/cart.html" class="cta">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <h2>Your cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-summary" style="margin-top:18px"></div>
+      <div class="card" style="margin-top:16px">
+        <h3>Checkout</h3>
+        <label>Email <input id="email" type="email" placeholder="you@example.com"></label>
+        <label>Payment method
+          <select id="provider"><option value="stripe">Stripe</option><option value="paypal">PayPal</option><option value="none">No payment (dev)</option></select>
+        </label>
+        <div style="margin-top:10px"><button id="checkout" class="btn">Proceed to Checkout</button></div>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <div style="display:flex;justify-content:space-between;gap:20px;align-items:center">
+        <div>
+          <strong>GXUZ</strong><div class="meta">Digital keys & access</div>
+        </div>
+        <div class="meta">© GXUZ · All rights reserved · Analytics ID: G-ZWXG6W7T82</div>
+      </div>
+    </footer>
+    <script src='/assets/js/main.js'></script><script src='/assets/js/cart.js'></script><script src='/assets/js/checkout.js'></script></body></html>

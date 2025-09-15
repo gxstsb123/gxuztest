@@ -1,0 +1,38 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Order complete - GXUZ</title><link rel='stylesheet' href='/assets/css/style.css'></head><body>
+    <header class="site-header container">
+      <div class="brand">
+        <img class="logo" src="/images/logo.svg" alt="GXUZ">
+        <div>
+          <h1>GXUZ</h1>
+          <div class="tagline">[GXUZ Services]</div>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="/products.html">Products</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/cart.html" class="cta">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      </nav>
+    </header>
+    
+    <main class="container card" style="text-align:center">
+      <h2>Thank you — your order was successful</h2>
+      <p id="order-info" class="meta"></p>
+      <p><a id="invoice-link" class="btn" href="#">View invoice</a></p>
+    </main>
+
+    <footer class="site-footer container">
+      <div style="display:flex;justify-content:space-between;gap:20px;align-items:center">
+        <div>
+          <strong>GXUZ</strong><div class="meta">Digital keys & access</div>
+        </div>
+        <div class="meta">© GXUZ · All rights reserved · Analytics ID: G-ZWXG6W7T82</div>
+      </div>
+    </footer>
+    
+<script>
+  const params = new URLSearchParams(location.search); const order = params.get('order');
+  document.getElementById('order-info').innerText = order ? ('Order: ' + order) : 'No order information available.';
+  if(order) document.getElementById('invoice-link').href = '/invoices/' + order + '.html';
+</script>
+</body></html>
